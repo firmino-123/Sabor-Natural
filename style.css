@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.espacoLateral {
+  width: 80vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--Fundo-site);
+}
+
+header {
+  height: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 350px;
+}
+
+.menu {
+  max-width: 700px;
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  font-size: 20px;
+  color: white;
+  text-decoration: underline transparent;
+  text-decoration-thickness: 2px;
+  /* para por tempo no sublinhar */
+  transition: text-decoration 500ms ease;
+}
+
+/* para a cor sublinhar  */
+.menu a:hover {
+  text-decoration-color: darkgreen;
+}
+
+.banner {
+  background-image: url(./imgs/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  background-position: 0px -250px;
+}
+
+#sobre {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sobre img {
+  max-width: 460px;
+  width: 40%;
+  border-radius: 40px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#sobre p {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+#parallax{
+    height: 250px;
+
+   /* background-image: url(./imgs/parallax.svg); */
+
+   background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/1e843d0c4bdf03f027f9dfcc22774165.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-bottom: 120px;
+}
